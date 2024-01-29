@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Details</title>
+    <link rel="stylesheet" href="doner.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto:wght@300&family=Shippori+Antique&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background-image: url("https://e7.pngegg.com/pngimages/736/269/png-clipart-food-background-food-fruit.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+.container{
+    margin: 50px 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: 1px solid gainsboro;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.banner{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    top: 5%;
+    left: 5px;
+}
+.image_block{
+    width: 350px;
+    height: 600px;
+}
+.image_block img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.user_details_block{
+    margin: 50px 0 0 30px;
+}
+.user_info{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: rgba( 255, 255, 255, 0.1 );
+}
+select{
+    width: 250px;
+    height: 37px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.1 );
+}
+textarea{
+    border-radius: 3px;
+    background: rgba( 255, 255, 255, 0.1 );
+    border: 1px solid black;
+}
+.submit{
+    width: 100px;
+    height: 40px;
+    padding: 5px;    
+    font-weight: bolder;
+    color: #fff;
+    float: right;
+    background-color: cadetblue;
+    font-size: large;
+}
+h1{
+	color: black;
+  text-shadow: 2px 2px 2px #000000;
+  font-size:30;
+}
+pre{
+	font-family:Kristen-ITC;
+}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="image_block">
+                <img src="../assets/fd.jpg" alt="">
+            </div>
+            <div class="banner_text">
+                <h1>FOOD DETAILS</h1>
+				<h2><pre>"FOR HOMELESS
+				
+        FOOD IS BIGEER,
+  
+WORRY THAN
+  
+        CARONA VIRUS!!"</pre></h2>
+            </div>
+        </div>
+        <div class="user_details_block">
+            <form action="fd.php" method="POST" class="user_info">
+                <div class="details">
+                    <div class="form-input">
+                        <label for="food_num" class="required">No Of Food Items</label>
+                        <input type="number" name="food_num" id="first_name" />
+                    </div>
+                    <div class="form-input">
+                        <label for="food_quantity" class="required">Food Quantity in kgs</label>
+                        <input type="number" name="food_quantity" id="last_name" />
+                    </div>                   
+                    <div class="form-input">
+                        <label for="prep_time" class="required">Prepared Time</label>
+                        <input type="time" name="prep_time" id="email" />
+                    </div>
+                    <div class="form-input">
+                        <label for="exp_time" class="required">Expected Expiry Time</label>
+                        <input type="time" name="exp_time" id="phone_number" />
+                    </div>
+                   
+                    <div class="form-input">
+                        <label for="foodtype" class="required">Food Category</label>
+                        <select name="foodtype" id="organizationtype">
+                            <option value="restaurant">Vegetarian</option>
+                            <option value="Hostel">Non-Vegetarian</option>
+                                    
+                        </select>
+                    </div>
+                </div>
+				
+                <div class="details">
+                    
+                     <div class="form-input">
+                        <label for="nutricous_type" class="required">Catogorization on Nutricious Value</label>
+                        <select name="nutricous_type" id="organizationtype">
+                            <option value="restaurant">Fully Nutricious</option>
+                            <option value="Hostel">Semi-Nutricious</option>
+							<option value="Hostel">Semi-Junk</option>
+							<option value="Hostel">Fully-Junk</option>
+                                    
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="Food_des" class="required">Describe about Food(Optional)</label>
+                        <textarea name="Food_des" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+				<input type="submit" class="submit">
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+    
+ -->
+<!-- <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="meal_preference">meal preference</label>
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="meal_preference" id="meal_preference">
+                                            <option value="Vegetarian">Vegetarian</option>
+                                            <option value="non-vegetarian">non-vegetarian</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment">TYPE OF USER</label>
+                                    </div>
+                                    <div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="donate" id="donar" checked>
+                                            <label for="donar">donar</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="receive" id="receiver">
+                                            <label for="receiver">receiver</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                        </div>
+                    </form> -->

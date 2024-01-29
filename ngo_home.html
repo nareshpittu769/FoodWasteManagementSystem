@@ -1,0 +1,406 @@
+<html>
+<head>
+
+
+<style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    width:100%;
+    height:100vh;
+}
+
+.header {
+    border:1px solid black;
+    width:100%;
+    height:70px;
+    background-position:center;
+    background-size:cover;
+   
+    color: rgb(8, 1, 1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#logo{
+    height:70px;
+    margin-left:30px;
+    padding:10px;
+  }
+#abc{
+  width:100%;
+  height:100vh;
+  background-image: url(img2.jpg);
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.589);
+  line-height: 70px;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:black;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+.banner {
+    height: 800px;
+    width: 60%;
+    text-align: center;
+    margin: -30% auto;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.banner h1 {
+    font-size: 60px;
+    font-weight:bold;
+
+}
+.banner p {
+    padding-top:20px;
+    font-size: 30px;
+    color: rgba(5, 1, 1, 0.6);
+    font-weight:200;
+    word-spacing: 1px;
+}
+.banner a {
+    text-decoration: none;
+    font-size:18px;
+    color: rgb(20, 8, 8);
+    margin: 90px auto;
+    display: block;
+    font-weight: bold;
+    border: 2px solid rgb(3, 2, 2);
+    width: 27%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 7px;
+}
+.container {
+    width:100%;
+    height:600px;
+    text-align:center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.text {
+    padding-top: 50px;
+    margin-top:40px;
+    
+}
+.text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.8);
+}
+.text p {
+    font-size: 18px;
+    color: rgba(0,0,0,.5);
+    padding-top: 4px;
+
+}
+.main {
+    width:90%;
+    height: 400px;
+    margin:50px 5%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.single {
+    width:33%;
+    height:100%;
+    text-align:center;
+    padding: 40px 20px;
+}
+.single i {
+    font-size: 45px;
+}
+.single p {
+    padding-top:40px;
+    color: rgba(0,0,0,0.6);
+    display:block;
+    line-height:180%;
+    font-size: 14px;
+}
+.single a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    font-size:18px;
+    font-weight:700;
+    width:45%;
+    height:55px;
+    line-height: 55px;
+    border: 2px solid rgba(0,0,0,0.8);
+    display:block;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.589);
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  margin: 16px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: fixed;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+.active_hostels{
+	margin: 0px 50px 20px 50px;
+	border:2px solid black;
+	height:250px;
+}
+.active_rest{
+	margin: 0px 50px 20px 50px;
+	border:2px solid black;
+	height:250px;
+}
+.active_funhalls{
+	margin: 0px 50px 0px 50px;
+	border:2px solid black;
+	height:250px;
+}
+iframe{
+	height:inherit;
+	width:100%;
+}
+.head{
+	margin-top:20px;
+	margin-left:50px;
+	font-family:verdana;
+}
+body{
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4v2kFRnCPNmVyOMZHXebiCA7NQ3h0XEBYg&usqp=CAU");
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+  
+</style>
+</head>
+
+<body>
+
+ <div class="header">
+    <div id="abc">
+    <nav>
+      <img id="logo" src="https://svswa.org/svswauploads/WM-primary-Two-color-logo.jpg" >
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About-Us</a></li>
+            <li><a href="ngo_community.php">NGO-Community</a></li>
+            <li><a href="#">Sign-Out</a></li>
+            <!--**************************************************-->
+        
+            <!--**************************************************-->
+        </ul>
+    </nav>
+	</div>
+</div>
+<div class="head">
+	<h1>Active Hostes</h1>
+</div>
+<div class="active_hostels">
+	
+	<iframe src="vdemo2.php" title="hostel"></iframe>
+</div><br><br>
+<div class="head">
+	<h1>Active Restaurents</h1>
+</div>
+<div class="active_rest">
+	<iframe src="vdemo.php" title="rest"></iframe>
+</div><br><br>
+<div class="head">
+	<h1>Active FunctionHalls</h1>
+</div>
+<div class="active_funhalls">
+	<iframe src="vdemo3.php" title="fh"></iframe>
+</div><br><br>
+</div>
+<footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>FOOD WASTAGE MANAGEMENT System is a platform where you can donate leftover food from Restaurents,Hostels and Function halls etc
+		 to the needy.NGOs are connected virtually with you within our interface.Food is collected by NGOs and is donated to the needy </p>
+		 <p>Instead of feeding DUSTBINS ,Feed the needy</p>
+		 <p style="font-family:Lucida Calligraphy;">NO-ONE SHOULD NEVER DIE OF HUNGER!!</p>
+       </div>
+       <div class="lower">
+         
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+91 9059415123</a>
+         </div>
+         <div class="email">
+           <a href="mailto:FWMteam2021@gmail.com"><i class="fas fa-envelope"></i>FWMteam2021@gmail@gmail.com</a>
+         </div>
+     </div>
+     <div class="right box">
+       <div class="topic">Follow us on:</div>
+       <form action="#">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2021 <a href="#">FOOD WASTAGE MANAGEMENT</a> website done by</p><pre><i style="color:red;">G.Vikas  G.LakshmiPriya  D.V.S Pranav  C.Naresh  D.Thanmayee</i></pre>
+   </div>
+ </footer>
+
+
+
+
+</body>
+
+</html>

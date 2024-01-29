@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONAR REGISTRATION</title>
+    <link rel="stylesheet" href="doner.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto:wght@300&family=Shippori+Antique&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background-image: url("https://i.pinimg.com/originals/6a/2a/85/6a2a85bb2fa79c1f4914ce0dd8f2347a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:right ;
+	position:relative;
+}
+.container{
+    margin: 50px 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: 1px solid gainsboro;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.banner{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    top: 3%;
+    left: 5px;
+}
+.image_block{
+    width: 350px;
+    height: 600px;
+}
+.image_block img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.user_details_block{
+    margin: 50px 0 0 30px;
+}
+.user_info{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: rgba( 255, 255, 255, 0.1 );
+}
+select{
+    width: 250px;
+    height: 37px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.1 );
+}
+textarea{
+    border-radius: 3px;
+    background: rgba( 255, 255, 255, 0.1 );
+    border: 1px solid black;
+}
+.submit{
+    width: 100px;
+    height: 40px;
+    padding: 5px;    
+    font-weight: bolder;
+    color: #fff;
+    float: right;
+    background-color: cadetblue;
+    font-size: large;
+}
+h1{
+	color: black;
+  text-shadow: 2px 2px 2px #000000;
+  font-size:30;
+}
+pre{
+	font-family:Kristen-ITC;
+}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="image_block">
+                <img>
+            </div>
+            <div class="banner_text">
+                <h1>DONOR REGISTER</h1>
+				<h2><pre>"WE CAN'T HELP 
+				
+ EVERYONE,
+  
+ but...
+ 
+EVERYONE CAN HELP
+  
+ SOMEONE."</pre></h2>
+            </div>
+        </div>
+        <div class="user_details_block">
+            <form action="donerRegister.php" method="POST" class="user_info">
+                <div class="details">
+                    <div class="form-input">
+                        <label for="first_name" class="required">First name</label>
+                        <input type="text" name="firstname" id="first_name" />
+                    </div>
+                    <div class="form-input">
+                        <label for="last_name" class="required">Last name</label>
+                        <input type="text" name="lastname" id="last_name" />
+                    </div>                   
+                    <div class="form-input">
+                        <label for="email" class="required">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="form-input">
+                        <label for="phone_number" class="required">Phone number</label>
+                        <input type="number" name="phonenumber" id="phone_number" />
+                    </div>
+                    <div class="form-input">
+                        <label for="password" class="required">password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+                    <div class="form-input">
+                        <label for="password" class="required">conform password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="form-input">
+                        <label for="organization_name" class="required">Organization name</label>
+                        <input type="text" name="organizationname" id="organization_name" />
+                    </div>
+                    <div class="form-input">
+                        <label for="organization_type" class="required">Organization type</label>
+                        <select name="organizationtype" id="organizationtype">
+                            <option value="restaurant">restaurant</option>
+                            <option value="Hostel">Hostel</option>
+                            <option value="Function Hall">Function Hall</option>                            
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="address" class="required">address</label>
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+				<input type="submit" class="submit">
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+<!-- 
+    
+ -->
+<!-- <form method="POST" class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="form-select">
+                                    <div class="label-flex">
+                                        <label for="meal_preference">meal preference</label>
+                                    </div>
+                                    <div class="select-list">
+                                        <select name="meal_preference" id="meal_preference">
+                                            <option value="Vegetarian">Vegetarian</option>
+                                            <option value="non-vegetarian">non-vegetarian</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="payment">TYPE OF USER</label>
+                                    </div>
+                                    <div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="donate" id="donar" checked>
+                                            <label for="donar">donar</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="receive" id="receiver">
+                                            <label for="receiver">receiver</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
+                        </div>
+                    </form> -->
